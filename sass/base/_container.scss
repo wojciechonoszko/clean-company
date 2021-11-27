@@ -1,6 +1,36 @@
 .container {
-    width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
-    align-items: center;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 15px;
+  align-items: center;
+}
+
+@media screen and (min-width:480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+// .container {
+//     width: 1200px;
+//     margin: 0px auto;
+//     padding: 0px 15px;
+//     align-items: center;
+//   }
