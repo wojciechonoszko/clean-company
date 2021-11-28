@@ -1,5 +1,5 @@
 .article__header {
-    width: 270px;
+    width: 450px;
     height: 16px;
   
     font-weight: bold;
@@ -13,7 +13,7 @@
   }
   
   .article__describe {
-    width: 270px;
+    width: 450px;
     height: 75px;
   
     font-size: 14px;
@@ -41,9 +41,113 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
   
     background-color: $color-article-icon-background;
+  }
+
+  @media screen and (min-width: 768px) {
+    .article__header {
+      width: 354px;
+      height: 16px;
+    
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    
+      margin-top: 50px;
+      margin-left: 0;
+    }
+    
+    .article__describe {
+      width: 354px;
+      height: 75px;
+    
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    
+      color: $color-describe;
+      margin: 0;
+    }
+  
+    .article-columns {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: space-between;
+    }
+  
+    .article__icon {
+      width: 70px;
+      height: 70px;
+      fill: $color-fill;
+    }
+    
+    .article__icon_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 354px;
+      height: 120px;
+      border-radius: 4px;
+    
+      background-color: $color-article-icon-background;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .article__header {
+      width: 270px;
+      height: 16px;
+    
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    
+      margin-top: 50px;
+      margin-left: 0;
+    }
+    
+    .article__describe {
+      width: 270px;
+      height: 75px;
+    
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    
+      color: $color-describe;
+      margin: 0;
+    }
+  
+    .article-columns {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: space-between;
+    }
+  
+    .article__icon {
+      width: 70px;
+      height: 70px;
+      fill: $color-fill;
+    }
+    
+    .article__icon_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+    
+      background-color: $color-article-icon-background;
+    }  
   }

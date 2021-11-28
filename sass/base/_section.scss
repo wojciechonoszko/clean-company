@@ -16,3 +16,46 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
   }
+
+  
+
+  .section-what-we-do {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $color-section-background;
+  }
+
+  .section-what-we-do_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .section-what-we-do {
+      display: none;
+      padding-top: 94px;
+      padding-bottom: 94px;
+      background-color: $color-section-background;
+    }
+  
+    .section-what-we-do_title {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  
