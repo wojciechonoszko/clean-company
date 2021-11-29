@@ -1,0 +1,63 @@
+.button--newsletter {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-button-background;
+    box-shadow: 0px 4px 4px $color-button-box-shadow;
+    border-radius: 4px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus,
+    &:hover {
+      background-color: $color-button-hover;
+      box-shadow: 0px 3px 1px $color-button-hover-shadow1, 0px 1px 2px $color-button-hover-shadow2,
+        0px 2px 2px $color-button-hover-shadow3;
+    }
+  }
+  
+  .button__text--newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 30px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: $color-button-text;
+    
+  }
+  .button__icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-button-icon;
+    margin-left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .button--newsletter{
+      margin: 0px;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    .button--newsletter{
+      margin: 0px;
+      margin-bottom: 0px;
+      float: right;
+    }
+  }
