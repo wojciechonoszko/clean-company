@@ -1,7 +1,26 @@
 .footer {
-    display: flex;
+    
+    padding-top: 60px;
     background-color: #2f303a;
-    height: 252px;
+    height: 605px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer {
+      display: flex;
+      background-color: #2f303a;
+      height: 252px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer {
+      display: flex;
+      background-color: #2f303a;
+      height: 252px;
+      margin: 0px;
+      padding: 0px;
+    }
   }
   
   
