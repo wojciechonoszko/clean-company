@@ -1,5 +1,6 @@
 .card-list {
   list-style-type: none;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
   padding: 0px;
   margin-top: 0px;
 }
@@ -60,8 +61,6 @@
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .card-list__link {
@@ -80,52 +79,50 @@
 
   &:hover,
   &:focus {
+    border: 1px solid $color-fill;
+    fill: $color-fill;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-list__item--client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid $color-card-list-border;
+    fill: $color-card-list-border;
+
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    fill: grey;
+
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
       border: 1px solid $color-fill;
       fill: $color-fill;
     }
-}
-
-@media screen and (min-width:768px) {
-  .card-list__item--client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 226px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid $color-card-list-border;
-    fill: $color-card-list-border;
-  
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  
-  }
-  
-  .card-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 226px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid grey;
-    fill: grey;
-  
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
-        border: 1px solid $color-fill;
-        fill: $color-fill;
-      }
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .card-list__item--client {
     display: flex;
     justify-content: center;
@@ -135,14 +132,12 @@
     border-radius: 4px;
     border: 1px solid $color-card-list-border;
     fill: $color-card-list-border;
-  
+
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  
   }
-  
+
   .card-list__link {
     display: flex;
     justify-content: center;
@@ -152,22 +147,22 @@
     border-radius: 4px;
     border: 1px solid grey;
     fill: grey;
-  
+
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:hover,
     &:focus {
-        border: 1px solid $color-fill;
-        fill: $color-fill;
-      }
+      border: 1px solid $color-fill;
+      fill: $color-fill;
+    }
   }
 }
-
 
 .card__item--figure {
   margin: 0;
+  margin-bottom: 30px;
   background-color: $color-background;
   box-shadow: 0px 1px 3px $color-box-shadow1, 0px 1px 1px $color-box-shadow2,
     0px 2px 1px $color-box-shadow3;
@@ -175,8 +170,16 @@
   display: inline-block;
   text-align: center;
 }
-/* 1x screens, default value, 320x240 image */
+
 .card__person1-img {
+  width: 450px;
+  height: 460px;
+  background-image: url("../images/mobile-img/mobile-person1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.card__person2-img {
   width: 450px;
   height: 460px;
   background-image: url("../images/mobile-img/mobile-person2.jpg");
@@ -184,26 +187,123 @@
   background-repeat: no-repeat;
   background-position: center, center;
 }
+.card__person3-img {
+  width: 450px;
+  height: 460px;
+  background-image: url("../images/mobile-img/mobile-person3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.card__person4-img {
+  width: 450px;
+  height: 460px;
+  background-image: url("../images/mobile-img/mobile-person4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .card__person1-img {
+    background-image: url("../images/mobile-img/mobile-person1@2x.jpg");
+  }
+  .card__person2-img {
+    background-image: url("../images/mobile-img/mobile-person2@2x.jpg");
+  }
+  .card__person3-img {
+    background-image: url("../images/mobile-img/mobile-person3@2x.jpg");
+  }
+  .card__person4-img {
+    background-image: url("../images/mobile-img/mobile-person4@2x.jpg");
+  }
+}
 
 @media screen and (min-width: 768px) {
-  
   .card__person1-img {
-/* 2x screens, retina, 640x480 image */
-  
     width: 354px;
     height: 374px;
     background-image: url("../images/tablet/tablet-person1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
-}
+  }
+  .card__person2-img {
+    width: 354px;
+    height: 374px;
+    background-image: url("../images/tablet/tablet-person2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+  .card__person3-img {
+    width: 354px;
+    height: 374px;
+    background-image: url("../images/tablet/tablet-person3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+  .card__person4-img {
+    width: 354px;
+    height: 374px;
+    background-image: url("../images/tablet/tablet-person4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .card__person1-img {
+      background-image: url("../images/tablet/tablet-person1@2x.jpg");
+    }
+    .card__person2-img {
+      background-image: url("../images/tablet/tablet-person2@2x.jpg");
+    }
+    .card__person3-img {
+      background-image: url("../images/tablet/tablet-person3@2x.jpg");
+    }
+    .card__person4-img {
+      background-image: url("../images/tablet/tablet-person4@2x.jpg");
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .card__person1-img {
     width: 270px;
     height: 260px;
-    background-image: url("../images/img1.jpg");
+    background-image: url("../images/desktop-person1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+  .card__person2-img {
+    width: 270px;
+    height: 260px;
+    background-image: url("../images/desktop-person2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+  .card__person3-img {
+    width: 270px;
+    height: 260px;
+    background-image: url("../images/desktop-person3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+  .card__person4-img {
+    width: 270px;
+    height: 260px;
+    background-image: url("../images/desktop-person4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
