@@ -1,111 +1,134 @@
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobile-menu {
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 480px;
+  height: 800px;
+  background-color: #ffffff;
 
-  
-  
-  #menuToggle {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 25px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    text-align: right;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 1;
+
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+
+  &:hover,
+  &:focus {
+    color: $color-fill;
+    box-shadow: 0px 3px 1px $color-button-hover-shadow1,
+      0px 1px 2px $color-button-hover-shadow2,
+      0px 2px 2px $color-button-hover-shadow3;
   }
+}
+/* Style navigation menu links */
+.mobile-menu__link {
+  display: block;
+  color: $color-main;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  &:hover {
+    color: $color-fill;
+  }
+}
+
+.mobile-menu__email {
+  display: block;
+  margin-top: 32px;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: $color-describe;
+}
+
+.mobile-menu__phone {
+  display: block;
+  margin-top: 300px;
+  height: 40px;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+
+  letter-spacing: 0.02em;
+
+  color: $color-fill;
+}
+
+.mobile-menu__social-list {
+  position: absolute;
+  width: 360px;
+  height: 25px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0px;
+  padding: 0px;
+}
+
+.mobile-menu__social_link {
+  padding-right: 9px;
+  text-decoration: none;
+  color: $color-fill;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
   
-  #menuToggle input
-  {
-    display: flex;
-    width: 40px;
-    height: 32px;
+}
+.mobile-menu__social_item {
+  height: 22px;
+  &::after {
+    content: '';
     position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-  }
-  
-  #menuToggle span
-  {
-    display: flex;
-    width: 29px;
-    height: 2px;
-    margin-bottom: 5px;
-    margin-right: 0px;
-    position: relative;
-    background: $color-main;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  #menuToggle span:first-child
-  {
-    transform-origin: 0% 0%;
-  }
-  
-  #menuToggle span:nth-last-child(2)
-  {
-    transform-origin: 0% 100%;
-  }
-  
-  #menuToggle input:checked ~ span
-  {
-    opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
-  }
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  
-  #menu
-  {
-    position: absolute;
-    width: 480px;
-    height: 800px;
-    top: 0;
-    right: 0;
-    
-    border: 0px;
-  
-    background-color: rgba(33, 150, 243, 0.9);
-  
-    transform: translatey(100%);
-    transition: transform 250ms ease;
-  
-    backface-visibility: hidden;
-    border: 1px solid;
-    border-color: #ffffff;
-  }
-//     box-shadow: 0 0 10px #85888C;
-//     margin: -50px 0 0 -50px;
-//     padding: 50px;
-//     padding-top: 125px;
-//     background-color: #F5F6FA;
-//     -webkit-font-smoothing: antialiased;
-//     transform-origin: 0% 0%;
-//     transform: translate(-100%, 0);
-//     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-//   }
-  
-  #menu li
-  {
-    padding: 10px 0;
-    transition-delay: 2s;
-  }
-  
-  #menuToggle input:checked ~ ul
-  {
-    transform: none;
-  }
+    height: 90%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }  
+}
+
+/* Style the hamburger menu */
+.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

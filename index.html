@@ -33,18 +33,33 @@
               <span class="logo logo--linktext">Studio</span>
             </a>
             
-            <div id="menuToggle">
-              <input type="checkbox" />
+            <div class="mobile-menu">
+              <button type="button" class="mobile-menu__close-btn">X</button>
+              <a class="mobile-menu__link" href="#news">News</a>
+              <a class="mobile-menu__link" href="#contact">Contact</a>
+              <a class="mobile-menu__link" href="#about">About</a>
+              <a class="mobile-menu__phone" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="mobile-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <ul class="mobile-menu__social-list">
+                <li class="mobile-menu__social_item">
+                  <a class="mobile-menu__social_link" href="#instagram">Instagram</a>
+                </li>
                 <span></span>
-                <span></span>
-                <span></span>
-            <ul id="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Info</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+                <li class="mobile-menu__social_item">
+                  <a class="mobile-menu__social_link href="#twitter">Twitter</a>
+                </li>
+                <li class="mobile-menu__social_item">
+                  <a class="mobile-menu__social_link href="#facebook">Facebook</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__social_link href="#linkedin">Linkedin</a>
+                </li>
+              </ul>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
             
             <ul class="menu-nav__list">
               <li class="menu-nav__item">
