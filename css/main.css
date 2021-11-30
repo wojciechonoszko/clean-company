@@ -1845,7 +1845,7 @@ h6 {
 
 .form__button_container {
   position: absolute;
-  width: 448px;
+  width: 370px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -2044,11 +2044,11 @@ h6 {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -40%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 620px;
   background-color: #ffffff;
   transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
@@ -2059,9 +2059,13 @@ h6 {
   padding: 40px;
 }
 
+.form {
+  width: 370px;
+}
+
 .form__input {
   position: absolute;
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin: 0;
   padding: 0;
@@ -2082,8 +2086,8 @@ h6 {
 }
 
 .form__textarea {
-  width: 448px;
-  height: 120px;
+  width: 370px;
+  height: 140px;
   padding-top: 12px;
   padding-left: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -2121,6 +2125,11 @@ h6 {
   justify-content: center;
 }
 
+.close-btn:hover, .close-btn:focus {
+  color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -2156,12 +2165,13 @@ h6 {
 .checkbox__label {
   font-family: "Roboto";
   font-weight: 400;
-  width: 420px;
-  height: 24px;
+  width: 370px;
+  height: 16px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71rem;
   letter-spacing: 0.03em;
   color: #757575;
@@ -2199,11 +2209,12 @@ h6 {
 }
 
 .form__title {
-  width: 448px;
-  height: 23px;
+  width: 370px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0px;
   margin-bottom: 12px;
   font-family: "Roboto";
@@ -2242,6 +2253,74 @@ h6 {
 .form__input_icon_container svg:focus-within {
   fill: #2196f3;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 620px;
+    top: 30%;
+  }
+  .form {
+    width: 370px;
+  }
+  .form__title {
+    width: 370px;
+    height: 60px;
+    line-height: 1.15em;
+    text-align: center;
+  }
+  .form__input {
+    width: 370px;
+    height: 40px;
+  }
+  .form__textarea {
+    width: 370px;
+    height: 140px;
+  }
+  .checkbox__label {
+    width: 370px;
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .form__button_container {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    top: 40%;
+  }
+  .form {
+    width: 448px;
+  }
+  .form__title {
+    width: 448px;
+    height: 23px;
+    line-height: 1.15em;
+    text-align: center;
+  }
+  .form__input {
+    width: 448px;
+    height: 40px;
+  }
+  .form__textarea {
+    width: 448px;
+    height: 120px;
+  }
+  .checkbox__label {
+    width: 420px;
+    height: 16px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .form__button_container {
+    width: 448px;
+  }
 }
 
 .card-list {
