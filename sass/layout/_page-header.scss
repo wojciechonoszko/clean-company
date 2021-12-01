@@ -91,6 +91,7 @@
     align-items: flex-start;
     width: 138px;
     height: 40px;
+    padding: 0px;
 
   }
   .page-header__email {
@@ -186,7 +187,7 @@
     width: 161px;
     height: 16px;
     margin-right: 30px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
   
@@ -229,7 +230,7 @@
     text-decoration: none;
     width: 130px;
     height: 16px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
    
   
