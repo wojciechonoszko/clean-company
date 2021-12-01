@@ -18,6 +18,7 @@
 body {
   font-family: var(--main-font);
   text-decoration: none;
+  background-color: #ffffff;
 }
 
 h1,
@@ -2128,7 +2129,7 @@ h6 {
   width: 450px;
   height: 120px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -2170,7 +2171,6 @@ h6 {
     width: 354px;
     height: 120px;
     border-radius: 4px;
-    background-color: #f5f4fa;
   }
 }
 
@@ -2213,7 +2213,6 @@ h6 {
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-color: #f5f4fa;
   }
 }
 
