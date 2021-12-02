@@ -35,7 +35,7 @@
     width: 70px;
     height: 70px;
     fill: $color-fill;
-    background-color: $color-background;
+    background-color: $color-section-background;
   }
   
   .article__icon_container {
@@ -46,7 +46,7 @@
     height: 120px;
     border-radius: 4px;
   
-    background-color: $color-background;
+    background-color: $color-section-background;
   }
 
   @media screen and (min-width: 768px) {

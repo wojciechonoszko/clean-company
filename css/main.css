@@ -65,7 +65,7 @@ h6 {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,6 +82,10 @@ h6 {
   }
 }
 
+.section-our-team {
+  background-color: #f5f4fa;
+}
+
 .section-title {
   display: flex;
   justify-content: center;
@@ -96,7 +100,7 @@ h6 {
 .section-what-we-do {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
 }
 
 .section-what-we-do_title {
@@ -115,7 +119,6 @@ h6 {
     display: none;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #f5f4fa;
   }
   .section-what-we-do_title {
     display: none;
@@ -2119,7 +2122,7 @@ h6 {
   width: 70px;
   height: 70px;
   fill: #2196f3;
-  background-color: #ffffff;
+  background-color: #f5f4fa;
 }
 
 .article__icon_container {
@@ -2129,7 +2132,7 @@ h6 {
   width: 450px;
   height: 120px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #f5f4fa;
 }
 
 @media screen and (min-width: 768px) {
