@@ -17,6 +17,21 @@
   flex-direction: column;
   align-items: center;
   padding: 40px; 
+  color: pink;
+  
+  
+}
+
+.modal__elements_text {
+  display: flex;
+  color: red;
+}
+.modal__element_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: red;
 }
 .form {
   width: 370px;
@@ -75,8 +90,8 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #1ba71b;
+  border: 1px solid rgba(142, 61, 61, 0.1);
   border-radius: 50%;
   cursor: pointer;
   text-align: center;

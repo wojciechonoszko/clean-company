@@ -2234,7 +2234,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   padding: 40px;
+
+  
 }
+
 
 .form {
   width: 370px;

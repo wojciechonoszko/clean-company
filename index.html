@@ -48,7 +48,7 @@
                   <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
                   <a class="mobile-menu__link" href="#contact">Kontakt</a>
                   <a class="mobile-menu__phone" href="tel:+48111111111">+48 111 111 111</a>
-                  <a class="mobile-menu__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="mobile-menu__email" href="mailto:info@clean-company.com">info@clean-company.com</a>
                   <ul class="mobile-menu__social-list">
                     <li class="mobile-menu__social_item">
                       <a class="mobile-menu__social_link" href="#instagram">Instagram</a>
@@ -74,7 +74,7 @@
                 <a href="portfolio.html" class="menu-nav__item_text">Portfolio</a>
               </li>
               <li class="menu-nav__item">
-                <a href="/Kontakt/" class="menu-nav__item_text">Kontakt</a>
+                <a href="#contact" class="menu-nav__item_text">Kontakt</a>
               </li>
             </ul>
             <ul class="menu-nav__email-phone_item">
@@ -409,21 +409,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-contact">
-          <a href="/WebStudio/" class="footer-logo">
-            <span class="footer-logo footer-logo--webtext">Web</span>
-            <span class="footer-logo footer-logo--linktext">Studio</span>
+          <a href="#top" class="footer-logo">
+            <span class="footer-logo footer-logo--webtext">Clean</span>
+            <span class="footer-logo footer-logo--linktext">Company</span>
           </a>
 
           <p class="footer-contact__address">
-            m. Warszawa, Aleje Jerozolimskie 21
+            Działam na terenie Trójmiasta i okolic
           </p>
           <p class="footer-contact__email">
             <a
               href="mailto:info@devstudio.com"
               class="footer-contact__email footer-contact__email--text"
-              >info@devstudio.com</a
+              >info@clean-company.com</a
             >
           </p>
+          <a name="contact"></a>
           <p class="footer-contact__phone">
             <a href="tel:+48111111111" class="footer-contact__phone footer-contact__phone--text"
               >+48 111 111 111</a
@@ -464,7 +465,7 @@
           </ul>
         </div>
 
-        <form
+        <!-- <form
           class="form-newsletter"
           name="signup_form"
           autocomplete="on"
@@ -488,14 +489,22 @@
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
-        </form>
+        </form> -->
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close="">X</button>
-        <form class="form">
+        <div class="modal__elements_text">
+          <p class="modal__element_text">Nie czekaj!</p>
+          <p class="modal__element_text">Zadzwoń!</p>
+          <p class="modal__element_text">Przyjadę, wyczyszczę i po kłopocie!</p>
+          <a href="tel:+48111111111" class="modal__element_text"
+                > +48 111 111 111</a>
+        </div>
+        
+          <!-- <form class="form">
           <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
           <label class="form__label" for="modal-text-name">
             <p class="form__label_text">Imię</p>
@@ -570,7 +579,7 @@
           <div class="form__button_container">
             <button class="form__button" type="submit">Wyślij</button>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
