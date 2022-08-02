@@ -68,21 +68,28 @@
             
             <ul class="menu-nav__list">
               <li class="menu-nav__item">
-                <a href="index.html" class="menu-nav__item_mark">Agencja</a>
+                <a href="#about-me" class="menu-nav__item_mark">O mnie</a>
               </li>
               <li class="menu-nav__item">
-                <a href="portfolio.html" class="menu-nav__item_text">Portfolio</a>
+                <a href="portfolio.html" class="menu-nav__item_text">Usługi</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="portfolio.html" class="menu-nav__item_text">Cennik</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="portfolio.html" class="menu-nav__item_text">Moje realizacje</a>
               </li>
               <li class="menu-nav__item">
                 <a href="#contact" class="menu-nav__item_text">Kontakt</a>
               </li>
+              
             </ul>
             <ul class="menu-nav__email-phone_item">
               <a href="mailto:info@devstudio.com" class="page-header__email">
                 <svg class="email__icon">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com
+                info@clean-company.com
               </a>
               <a href="tel:+48111111111" class="page-header__phone">
                 <svg class="phone__icon">
@@ -98,29 +105,68 @@
     <main>
       <div class="head-overlay">
         <div class="container">
-          <p class="head-overlay__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</p>
+          <p class="head-overlay__text">EFEKTYWNE CZYSZCZENIE WASZEGO OTOCZENIA</p>
           <button class="button" type="submit" data-modal-open>
             <p class="button__text">Zamów usługę</p>
           </button>
         </div>
       </div>
 
-      <section title="Nasze atuty" class="section">
+      <section title="O mnie" class="section">
+        <a name="about-me" class="section-what-we-do_title">O mnie</a>
         <div class="container">
           <div class="article-columns">
-            <article>
-              <div class="article__icon_container">
-                <svg class="article__icon">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h2 class="article__header">LOREM IPSUM</h2>
-              <p class="article__describe">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </article>
-            <article>
+            
+            <figure class="card__item card__item--figure__about-me">
+              <div class="card__person1-img"></div>
+              <figcaption class="figcaption">
+                <h2 class="figcaption__member">Gabriel</h2>
+                <p class="figcaption__function">Fachowiec ds. utrzymania czystości</p>
+                <article class="article__about-me">
+                  <!-- <div class="article__icon_container">
+                    <svg class="article__icon">
+                      <use href="./images/icons.svg#icon-antenna"></use>
+                    </svg>
+                  </div> -->
+                  <!-- <h2 class="article__header">Gabriel...</h2> -->
+                  <p class="article__describe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur volutpat quam, nec sollicitudin arcu sodales in. Ut vel tortor tristique tellus semper tempus in sit amet lacus. Sed a fermentum dolor. Nunc scelerisque massa lectus, porttitor semper tortor semper pellentesque. Donec hendrerit, lorem sit amet tempor vulputate, purus nisl aliquam libero, sit amet semper arcu arcu id est. Aenean facilisis libero a consequat bibendum. Morbi placerat erat vel ultricies elementum.
+                  </p>
+                </article>
+                <!-- <ul class="social-links">
+                  <li class="social-links__item">
+                    <a class="social-links__link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a class="social-links__link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a class="social-links__link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a class="social-links__link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul> -->
+              </figcaption>
+            </figure>
+            
+            <!-- <article>
               <div class="article__icon_container">
                 <svg class="article__icon">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -156,6 +202,183 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </article>
+          </div>
+        </div> -->
+      </section>
+      <section class="section">
+        <div class="container">
+          <ul class="button-group">
+            <button class="button-group__item">
+              <p class="button-group__text">Wszystkie</p>
+            </button>
+            <button class="button-group__item">
+              <p class="button-group__text">Strony</p>
+            </button>
+            <button class="button-group__item">
+              <p class="button-group__text">Aplikacje</p>
+            </button>
+            <button class="button-group__item">
+              <p class="button-group__text">Design</p>
+            </button>
+            <button class="button-group__item">
+              <p class="button-group__text">Marketing</p>
+            </button>
+          </ul>
+          <div class="portfolio-cards">
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img1"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img2"></div>
+
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img3"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img4"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img5"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img6"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img7"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img8"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
+            <figure class="portfolio-cards__figure portfolio-card">
+              <div class="portfolio-cards__img">
+                <div class="portfolio-card__img9"></div>
+                <div class="portfolio-cards__overlay">
+                  <p class="portfolio-cards__overlay_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit nulla numquam dolores in reiciendis temporibus
+                    voluptates voluptas repudiandae, quod, dolorem, labore earum
+                    cupiditate natus. Nihil, laboriosam quam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portfolio-cards__figcaption">
+                <h2 class="portfolio-cards__figcaption_name">Technocrack</h2>
+                <p class="portfolio-cards__figcaption_describe">Strona internetowa</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

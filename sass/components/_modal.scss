@@ -17,22 +17,34 @@
   flex-direction: column;
   align-items: center;
   padding: 40px; 
-  color: pink;
+  color: black;
+  &__elements_text {
+    display: flex;
+    
+    flex-direction: column;
+    &::after {
+    content: ""; 
+    background-image: url("https://img.freepik.com/free-photo/adult-man-listening-rock-music-headphones-while-cleaning-house_482257-66.jpg?w=740&t=st=1659434011~exp=1659434611~hmac=85baccf0bc0273e80ef458e172c5420f8bce2ac24182f8b57508aa801d78f882");
+    background-size: cover;
+    margin: 10px;
+    
+    width: 400px; 
+    height: 300px;
+    }
+  }
   
-  
+
+  &__element_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+  }
 }
 
-.modal__elements_text {
-  display: flex;
-  color: red;
-}
-.modal__element_text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: red;
-}
+
+
 .form {
   width: 370px;
 }

@@ -11,6 +11,8 @@
     margin-top: 50px;
     margin-left: 0;
   }
+
+
   
   .article__describe {
     width: 450px;
@@ -21,14 +23,14 @@
     letter-spacing: 0.03em;
   
     color: $color-describe;
-    margin: 0;
+    margin-top: 20px;
   }
 
   .article-columns {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     padding: 0;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .article__icon {
@@ -115,9 +117,12 @@
       margin-top: 50px;
       margin-left: 0;
     }
+    .article__about-me{
+      width: 800px;
+    }
     
     .article__describe {
-      width: 270px;
+      width: 800px;
       height: 75px;
     
       font-size: 14px;
@@ -125,7 +130,7 @@
       letter-spacing: 0.03em;
     
       color: $color-describe;
-      margin: 0;
+      margin-top: 20px;
     }
   
     .article-columns {
