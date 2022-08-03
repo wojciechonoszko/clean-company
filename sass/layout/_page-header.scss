@@ -1,4 +1,20 @@
+.sticky {
+  display: block;
+  position: fixed;
+  // position: relative; 
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  
+}
 
+.content {
+  padding: 0px;
+}
+
+.sticky + .content {
+  padding: 0px;
+}
 
 .page-header {
   display: flex;
@@ -7,6 +23,7 @@
   border-bottom: 1px solid $color-border-bottom;
   background-color: $color-background;
   height: 80px;
+  width: 100%;
 }
 
 .page-header__email {

@@ -23,12 +23,12 @@
     <title>Main page</title>
   </head>
 
-  <body>
+  <body class="content">
     <header>
-      <div class="page-header">
+      <div class="page-header" id="page-header">
         <div class="container">
           <nav class="menu-nav">
-            <a href="/WebStudio/" class="logo">
+            <a href="#top" class="logo">
               <span class="logo logo--webtext">Clean</span>
               <span class="logo logo--linktext">Company</span>
             </a>
@@ -68,16 +68,20 @@
             
             <ul class="menu-nav__list">
               <li class="menu-nav__item">
-                <a href="#about-me" class="menu-nav__item_mark">O mnie</a>
+                <a href="#about-me" class="menu-nav__item_text">O mnie</a>
               </li>
               <li class="menu-nav__item">
                 <a href="#service" class="menu-nav__item_text">Usługi</a>
               </li>
+              
               <li class="menu-nav__item">
-                <a href="portfolio.html" class="menu-nav__item_text">Cennik</a>
+                <a href="#my-realization" class="menu-nav__item_text">Moje realizacje</a>
               </li>
               <li class="menu-nav__item">
-                <a href="portfolio.html" class="menu-nav__item_text">Moje realizacje</a>
+                <a href="#my-machines" class="menu-nav__item_text">Moje maszyny</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="#cennik" class="menu-nav__item_text">Cennik</a>
               </li>
               <li class="menu-nav__item">
                 <a href="#contact" class="menu-nav__item_text">Kontakt</a>
@@ -366,248 +370,110 @@
           </div>
         </div>
       </section>
+      
       <section class="section-what-we-do">
         <div class="container">
-          <h2 class="section-what-we-do_title">Czym się zajmujemy</h2>
+          <a name="my-realization"><h2 class="section-what-we-do_title">Moje realizacje</h2></a>
           <ul class="card-list">
             <li class="card-list__item">
               <div class="card-list__label">
                 <img
-                  src="images/img7.jpg"
+                  src="images/realizacje/hotel-victoria.jpg"
                   width="370"
                   height="294"
                   alt="programmer working his desk"
                 />
-                <p class="card-list__text">aplikacje komputerowe</p>
+                <p class="card-list__text">Hotel Victoria</p>
               </div>
             </li>
             <li class="card-list__item">
               <div class="card-list__label">
                 <img
-                  src="images/img5.jpg"
+                  src="images/realizacje/mieszkanie-gienka.jpg"
                   width="370"
                   height="294"
                   alt="programmer working his desk"
                 />
-                <p class="card-list__text">aplikacje komputerowe</p>
+                <p class="card-list__text">Mieszkanie pana Gienka</p>
               </div>
             </li>
             <li class="card-list__item">
               <div class="card-list__label">
                 <img
-                  src="images/img6.jpg"
+                  src="images/realizacje/fasada-kaszuby.jpg"
                   width="370"
                   height="294"
                   alt="programmer working his desk"
                 />
-                <p class="card-list__text">aplikacje komputerowe</p>
+                <p class="card-list__text">Dom na Kaszubach</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section">
-        <section class="section-our-team">
-          <h2 class="section-title">Nasz zespół</h2>
-          <div class="container">
-            <div class="card-list">
-              <figure class="card__item card__item--figure">
-                <div class="card__person1-img"></div>
-                <figcaption class="figcaption">
-                  <h2 class="figcaption__member">John Doe</h2>
-                  <p class="figcaption__function">Product Designer</p>
-                  <ul class="social-links">
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </figcaption>
-              </figure>
-              <figure class="card__item card__item--figure">
-                <div class="card__person2-img"></div>
-                <figcaption class="figcaption">
-                  <h2 class="figcaption__member">John Doe</h2>
-                  <p class="figcaption__function">Frontend Developer</p>
-                  <ul class="social-links">
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </figcaption>
-              </figure>
-              <figure class="card__item card__item--figure">
-                <div class="card__person3-img"></div>
-                <figcaption class="figcaption">
-                  <h2 class="figcaption__member">John Doe</h2>
-                  <p class="figcaption__function">Marketing</p>
-                  <ul class="social-links">
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </figcaption>
-              </figure>
-              <figure class="card__item card__item--figure">
-                <div class="card__person4-img"></div>
-                <figcaption class="figcaption">
-                  <h2 class="figcaption__member">John Doe</h2>
-                  <p class="figcaption__function">UI Designer</p>
-                  <ul class="social-links">
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-links__item">
-                      <a class="social-links__link" href="#">
-                        <svg class="social-icon">
-                          <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
+      <section class="section-what-we-do">
+        <div class="container">
+          <a name="my-machines"><h2 class="section-what-we-do_title">Moje maszyny</h2></a>
+          <ul class="card-list">
+            <li class="card-list__item">
+              <div class="card-list__label">
+                <img
+                  src="images/maszyny/karcher-myjka.jpg"
+                  width="370"
+                  height="294"
+                  alt="programmer working his desk"
+                />
+                <p class="card-list__text">Myjka ciśnieniowa</p>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-list__label">
+                <img
+                  src="images/maszyny/odkurzacz-karcher.jpg"
+                  width="370"
+                  height="294"
+                  alt="programmer working his desk"
+                />
+                <p class="card-list__text">Odkurzacz piorący</p>
+              </div>
+            </li>
+            <li class="card-list__item">
+              <div class="card-list__label">
+                <img
+                  src="images/maszyny/myjka-parowa-karcher.jpg"
+                  width="370"
+                  height="294"
+                  alt="programmer working his desk"
+                />
+                <p class="card-list__text">Myjka parowa</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
+        
       <section class="section">
-        <h2 class="section-title">Nasi klienci</h2>
+        <a name="cennik"></a>
+        <h2 class="section-title">Cennik</h2>
         <div class="container">
           <ul class="card-list card-list--client">
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link">
+              Czyszczenie 100 pln
             </li>
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo-1"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link">
+              Czyszczenie 100 pln
             </li>
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo-2"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link">
+              Czyszczenie 100 pln
             </li>
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo-3"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link">
+              Czyszczenie 100 pln
             </li>
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo-4"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link">
+              Czyszczenie 100 pln
             </li>
-            <li class="card-list__item card-list__item--client">
-              <a class="card-list__link card-list__link--client" href="#">
-                <svg class="client-icon">
-                  <use href="./images/icons.svg#icon-Logo-5"></use>
-                </svg>
-              </a>
+            <li class="card-list__item card-list__item--client card-list__link ">
+              Czyszczenie 100 pln
             </li>
           </ul>
         </div>
@@ -639,36 +505,18 @@
           </p>
         </div>
         <div class="footer-social">
-          <p class="footer-social__title">DOŁĄCZ DO NAS</p>
+          <p class="footer-social__title">DOŁĄCZ DO MNIE</p>
           <ul class="footer-social__list">
+            
+            
             <li class="footer-social__list_item">
-              <a class="footer-social__link_item" href="#">
-                <svg class="footer-social__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__list_item">
-              <a class="footer-social__link_item" href="#">
-                <svg class="footer-social__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__list_item">
-              <a class="footer-social__link_item" href="#">
+              <a class="footer-social__link_item" href="https://www.facebook.com/gabrys.box" target="_blank">
                 <svg class="footer-social__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__list_item">
-              <a class="footer-social__link_item" href="#">
-                <svg class="footer-social__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
+            
           </ul>
         </div>
 
@@ -791,5 +639,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/sticky-header.js"></script>
   </body>
 </html>

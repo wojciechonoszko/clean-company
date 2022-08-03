@@ -132,6 +132,22 @@ h6 {
   }
 }
 
+.sticky {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 0px;
+}
+
+.sticky + .content {
+  padding: 0px;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -139,6 +155,7 @@ h6 {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
   height: 80px;
+  width: 100%;
 }
 
 .page-header__email {
@@ -572,7 +589,6 @@ h6 {
 }
 
 .menu-nav__item_mark {
-  color: #2196f3;
   display: block;
   text-decoration: none;
   width: 53px;
@@ -582,17 +598,6 @@ h6 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.menu-nav__item_mark::after {
-  content: "";
-  display: block;
-  width: 53px;
-  height: 4px;
-  position: absolute;
-  bottom: -32px;
-  background-color: #2196f3;
-  border-radius: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -655,7 +660,6 @@ h6 {
     border-radius: 4px;
   }
   .menu-nav__item_mark {
-    color: #2196f3;
     display: block;
     text-decoration: none;
     width: 53px;
@@ -665,16 +669,6 @@ h6 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  }
-  .menu-nav__item_mark::after {
-    content: "";
-    display: block;
-    width: 53px;
-    height: 4px;
-    position: absolute;
-    bottom: -32px;
-    background-color: #2196f3;
-    border-radius: 2px;
   }
 }
 
@@ -702,18 +696,19 @@ h6 {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 254px;
+    width: 100%;
     height: 16px;
     text-decoration: none;
     padding: 0px;
     margin-left: 93px;
-    margin-right: 345px;
+    margin-right: 93px;
   }
   .menu-nav__item_text {
     display: block;
     text-decoration: none;
-    width: 53px;
-    height: 16px;
+    text-align: center;
+    width: 73px;
+    height: 32px;
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -725,39 +720,17 @@ h6 {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-nav__item_text:hover, .menu-nav__item_text:focus {
-    color: #2196f3;
+    text-shadow: 0 0 2px yellow;
   }
   .menu-nav__item_text:hover::after {
     content: "";
     display: block;
-    width: 53px;
+    width: 72px;
     height: 4px;
     position: absolute;
-    bottom: -32px;
-    background-color: #2196f3;
+    bottom: -15px;
+    background-color: yellow;
     border-radius: 4px;
-  }
-  .menu-nav__item_mark {
-    color: #2196f3;
-    display: block;
-    text-decoration: none;
-    width: 53px;
-    height: 16px;
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-  .menu-nav__item_mark::after {
-    content: "";
-    display: block;
-    width: 53px;
-    height: 4px;
-    position: absolute;
-    bottom: -32px;
-    background-color: #2196f3;
-    border-radius: 2px;
   }
 }
 
@@ -850,7 +823,7 @@ h6 {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .head-overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-overlay@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/vacuum/vacuum-carpet.jpg");
   }
 }
 
@@ -957,19 +930,18 @@ h6 {
 @media screen and (min-width: 1200px) {
   .footer-contact {
     width: 247px;
-    height: 132px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
     float: left;
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 40px;
     column-gap: 10px;
     padding: 0px;
   }
   .footer-contact__address {
     width: 247px;
-    height: 21px;
+    height: 40px;
     font-size: 14px;
     line-height: 1.71;
     margin: 0px;
@@ -979,7 +951,7 @@ h6 {
   .footer-contact__email {
     width: 231px;
     height: 21px;
-    text-align: left;
+    text-align: center;
     margin: 0px;
     margin-top: 9px;
     letter-spacing: 0.03em;
@@ -992,11 +964,13 @@ h6 {
     font-size: 14px;
     line-height: 1.71em;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
   }
   .footer-contact__phone {
     text-align: left;
     width: 231px;
     height: 21px;
+    text-align: center;
     margin: 0px;
     margin-top: 9px;
   }
@@ -1053,7 +1027,7 @@ h6 {
 }
 
 .footer-social__list_item:hover, .footer-social__list_item:focus {
-  background-color: #2196f3;
+  background-color: #adf321;
   cursor: url(./images/finger-black.png);
 }
 
@@ -1930,6 +1904,7 @@ h6 {
 .logo--linktext {
   color: #212121;
   margin-left: -1px;
+  text-shadow: 0 0 4px yellow;
 }
 
 .footer-logo {
@@ -1977,12 +1952,14 @@ h6 {
 }
 
 .footer-logo--linktext {
-  color: #ffffff;
+  color: #212121;
   margin-left: -1px;
+  text-shadow: 0 0 4px yellow;
 }
 
 .footer-logo--webtext {
-  color: #2196f3;
+  color: yellow;
+  text-shadow: 0 0 4px black;
 }
 
 .button {
@@ -2321,7 +2298,7 @@ h6 {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #1ba71b;
+  background-color: yellow;
   border: 1px solid rgba(142, 61, 61, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -2671,7 +2648,7 @@ h6 {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card-list__link:hover, .card-list__link:focus {
-    border: 1px solid #2196f3;
+    border: 4px solid yellow;
     fill: #2196f3;
   }
 }

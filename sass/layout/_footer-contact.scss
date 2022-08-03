@@ -100,20 +100,21 @@
 @media screen and (min-width: 1200px) {
   .footer-contact {
     width: 247px;
-    height: 132px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     float: left;
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 40px;
     column-gap: 10px;
   
     padding: 0px;
   }
   .footer-contact__address {
     width: 247px;
-    height: 21px;
+    height: 40px;
   
     font-size: 14px;
     line-height: 1.71;
@@ -127,7 +128,7 @@
 
     width: 231px;
     height: 21px;
-    text-align: left;
+    text-align: center;
   
     margin: 0px;
     margin-top: 9px;
@@ -143,6 +144,7 @@
     font-size: 14px;
     line-height: 1.71em;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
     
   }
   
@@ -150,7 +152,7 @@
     text-align: left;
     width: 231px;
     height: 21px;
-  
+    text-align: center;
     margin: 0px;
     margin-top: 9px;
   }
