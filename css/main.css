@@ -1523,7 +1523,7 @@ h6 {
   .portfolio-card__img1 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio1.jpg");
+    background-image: url("../images/uslugi/rolling-carpet.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1531,7 +1531,7 @@ h6 {
   .portfolio-card__img2 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio2.jpg");
+    background-image: url("../images/uslugi/wykladzina.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1539,7 +1539,7 @@ h6 {
   .portfolio-card__img3 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio3.jpg");
+    background-image: url("../images/uslugi/hotel.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1547,7 +1547,7 @@ h6 {
   .portfolio-card__img4 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio4.jpg");
+    background-image: url("../images/uslugi/restaurant.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1555,7 +1555,7 @@ h6 {
   .portfolio-card__img5 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio5.jpg");
+    background-image: url("../images/uslugi/posadzka.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1563,7 +1563,7 @@ h6 {
   .portfolio-card__img6 {
     width: 370px;
     height: 294px;
-    background-image: url("../images/desktop/desktop-portfolio6.jpg");
+    background-image: url("../images/uslugi/fasada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, center;
@@ -1923,7 +1923,8 @@ h6 {
 }
 
 .logo--webtext {
-  color: #2196f3;
+  color: yellow;
+  text-shadow: 0 0 4px black;
 }
 
 .logo--linktext {
